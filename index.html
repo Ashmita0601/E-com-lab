@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ecommerce</title>
+    <style>
+        .mainli:hover .subli{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="border border-red-500 p-5">
+        <div class="border border-blue-600 bg-[#FAF7F0] ">
+            <div class="flex items-center gap-2">
+                <img src="logo-black.png" height="80px" width="80px" alt="Logo">
+                <p class="text-4xl">दराज</p>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="h-full w-1/4 border border-blue-500">
+                <ul id="menu">
+                    <li class="p-3 mainli hover:cursor-pointer">Electronics
+                        <ul class="hidden subli bg-gray-200 rounded-lg">
+                            <li class="p-2 hover:bg-red-500 rounded-lg"><a href="#">Home Appliances</a></li>
+                            <li class="p-2 hover:bg-red-500 rounded-lg"><a href="#">Life Style</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="p-3">Health & Beauty</li>
+                    <li class="p-3 mainli cursor-pointer">Men's Fashion
+                        <ul class="hidden subli bg-gray-200 rounded-lg">
+                            <li class="p-2 hover:bg-red-500 rounded-lg"><a href="#">Formal</a></li>
+                            <li class="p-2 hover:bg-red-500 rounded-lg"><a href="#">Semi-Formal</a></li>
+                            <li class="p-2 hover:bg-red-500 rounded-lg"><a href="#">Casual</a></li>
+                        </ul>
+                    </li>
+                        
+                    <li class="p-3">Women's Fashion</li>
+                    <li class="p-3">Sports</li>
+                    <li class="p-3">Groceries</li>
+                </ul>
+            </div>
+            <div class="h-full w-3/4 border border-blue-500"></div>
+        </div>
+        <div class="border border-blue-600">Footer</div>
+    </div>
+</body>
+</html>
